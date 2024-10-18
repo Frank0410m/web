@@ -1,0 +1,88 @@
+body {
+	overflow: hidden;
+}
+.animation {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    background-color: pink;
+    padding: 10px;
+    animation: move 2s linear forwards; /* Mantener el último estado de la animación */
+}
+
+@keyframes move {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.animation {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    background-color: pink;
+    padding: 10px;
+    animation: move 2s linear forwards; /* Mantener el último estado de la animación */
+}
+
+@keyframes move {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.button {
+    position: absolute;
+    top: calc(50% + 50px);
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    cursor: pointer;
+    color: aliceblue;
+    font-size: 16px;
+    border-radius: 16px;
+    border: none;
+    outline: none;
+    background-color: rgb(160, 153, 153);
+    text-transform: uppercase;
+    overflow: hidden;
+    width: 135px;
+    height: 50px;
+    opacity: 10; /* Inicialmente oculto */
+    transition: opacity 5s ease;
+    margin-top: 50px;
+}
+canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+p {
+	margin: 0 0;
+	position: absolute;
+	font: 16px Verdana;
+	color: #eee;
+	height: 25px;
+	top: calc( 100vh - 30px );
+	text-shadow: 0 0 2px white;
+}
+p a {
+	text-decoration: none;
+	color: #aaa;
+}
+span {
+	font-size: 11px;
+}
+p > a:first-of-type {
+	font-size: 20px;
+}
